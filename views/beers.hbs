@@ -1,0 +1,13 @@
+<h1 style="text-align: center; text-decoration-line: underline;">{{title}}</h1>
+
+<ul class="beers-display">
+  {{#each beers}}
+    <li class="beer-card">
+      <div class="beer-card-content">
+        <img src="{{image_url}}" alt="{{name}}" class="beer-img">
+        <h3>{{name}}</h3>
+        <p>{{tagline}}</p>
+      </div>
+    </li>
+  {{/each}}
+</ul>

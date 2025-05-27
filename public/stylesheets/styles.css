@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
-  background: #f7f7f7;
+  background: #6a94ed;
   color: #222;
 }
 
@@ -18,7 +18,9 @@ body {
   max-width: 900px;
   margin: 40px auto;
   padding: 24px;
-  background: #fff;
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
   border-radius: 12px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
@@ -30,23 +32,31 @@ body {
 }
 
 .img-div img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
-
+.links-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center;
+}
 .links-div ul {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1.5rem;
   align-items: center;
 }
 
 .links-div a {
-  display: inline-block;
+
   padding: 12px 32px;
   background: #007bff;
   color: #fff;
@@ -60,6 +70,57 @@ body {
   background: #0056b3;
 }
 
+.beers-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.beers-display li.beer-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 1.5rem 1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  transition: box-shadow 0.2s;
+}
+
+.beers-display li.beer-card:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+.beer-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.beer-img {
+  height: 200px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+.beer-card h3 {
+  margin: 0.5rem 0 0.2rem 0;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.beer-card p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
 @media (min-width: 600px) {
   .links-div ul {
     flex-direction: row;
@@ -69,6 +130,14 @@ body {
     padding: 40px;
   }
 }
+
+footer {
+  margin-top: 15vh;
+  text-align: center;
+  color: #fff;
+}
+footer a{color: #f7f7f7;}
+
 
 /* Navbar (if used as partial) */
 .nav {
