@@ -2,6 +2,7 @@
   "name": "lab-ironbeers",
   "version": "2.0.0",
   "main": "app.js",
+  "type": "commonjs",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
@@ -9,9 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
     "express": "^4.17.1",
     "express-handlebars": "^8.0.3",
     "hbs": "^4.2.0",
+    "node-fetch": "^2.7.0",
     "punkapi-javascript-wrapper": "^1.0.2"
   },
   "devDependencies": {

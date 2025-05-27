@@ -4,9 +4,11 @@
   {{#each beers}}
     <li class="beer-card">
       <div class="beer-card-content">
-        <img src="{{image_url}}" alt="{{name}}" class="beer-img">
-        <h3>{{name}}</h3>
-        <p>{{tagline}}</p>
+        <a href="/beers/{{this._id}}">
+          <img src="{{this.image_url}}" alt="{{this.name}}" class="beer-img"></a>
+          <h3>{{this.name}}</h3>
+        
+        <p>{{this.tagline}}</p>
       </div>
     </li>
   {{/each}}
